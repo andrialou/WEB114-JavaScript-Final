@@ -1,0 +1,168 @@
+<!--Alexandria Schneider 11-28-21-->
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>WEB 114 Final Project Game</title>        
+    </head>
+    <body>
+        <div id="outerwrapper">
+        <header>
+            <h1>WEB 114 Final Project Game</h1>            
+        </header>
+        <nav>
+        </nav>
+        <main>
+            <p id="introParagraph">Hello! Welcome to my game. This webpage was created by Alex Schneider for the WEB 114 final project. Enjoy!</p>
+            <h3 id="participation">Participation Points: 0</h3>
+            <p>Answer a question to earn points.</p>
+
+            <!--1. Multiple Choice-->
+            <div class="question">
+            <h2>Let's test your JavaScript knowledge.</h2>
+            <p>Which of the following HTML elements is used to add JavaScript?</p>
+                <ol>
+                    <li><input type="radio" name="question1" id="option1">script</li>
+                    <li><input type="radio" name="question1" id="option2">src</li>
+                    <li><input type="radio" name="question1" id="option3">javascript</li>
+                </ol>
+                <button id="button1">Reveal answer</button>
+                <p id="answer1">The correct answer is...</p>
+            </div>
+            <br>
+            <!--2. How JavaScript expressions evaluate user data using +, -, *, /, %, and ** -->
+            <div class="question">
+                <h2>Basic Operators (+ - * / % **)</h2>
+                    <p>Practice using only numbers between 1 and 10.</p>
+                    <label for="number1">Number 1:</label>
+                        <input type="number" id="number1" min="0" max="10">
+                    <br>
+                    <select id="operation">
+                        <option value="add">add + </option>
+                        <option value="subtract">subtract - </option>
+                        <option value="multiply">multiply * </option>
+                        <option value="divide">divide / </option>
+                        <option value="modulus">modulus % </option>
+                        <option value="power">power of **</option>
+                    </select>
+                    <br>
+                    <label for="number2">Number 2:</label>
+                        <input type="number" id="number2" min="0" max="10">
+                    <br>
+                    <button id="button2">Calculate!</button>
+                    <p id="answer2">Answer goes here.</p>
+            </div>
+            <br>
+            <!--3. How JavaScript expressions evaluate user data using <, >, <=, >=-->
+            <div class="question">
+                <h2>Comparison Operators (&lt;, &gt;, &lt;=, &gt;=)</h2>
+                    <label for="number3">Number 1:</label>
+                        <input type="number" id="number3">
+                    <br>
+                    <select id="comparison">
+                        <option value="lessThan"> &lt; is less than </option>
+                        <option value="greaterThan"> &gt; is greater than </option>
+                        <option value="lessEquals"> &lt;= is less than or equal to </option>
+                        <option value="greaterEquals"> &gt;= is greater than or equal to  </option>
+                    </select>
+                    <br>
+                    <label for="number4">Number 2:</label>
+                        <input type="number" id="number4">
+                    <br>
+                    <button id="button3">Compare!</button>
+                    <p id="answer3">Answer goes here.</p>
+            </div>
+            <br>
+            <!--4. How JavaScript differentiates between =, ==, and === -->
+            <div class="question">
+                <h2>Differences between =, ==, and ===</h2>
+                    <label for="string">Type a number using letters if calculating =, and using digits if calculating == or ===. This number is evaluated as a string:</label>
+                    <br>
+                        <input type="text" id="string">
+                    <br>
+                    <select id="equals">
+                        <option value="equal1">= </option>
+                        <option value="equal2">== </option>
+                        <option value="equal3">=== </option>
+                    </select>
+                    <br>
+                    <label for="numberEquals">Type the same or a different number using digits. This number is evaluated as an integer:</label>
+                    <br>
+                        <input type="number" id="numberEquals">
+                    <br>
+                    <button id="button4">Click for result</button>
+                    <p id="answer4">Answer goes here.</p>
+            </div>
+            <br>
+            <!--5. How JavaScript uses the math Order of Operations (PEMDAS)-->
+            <div class="question">
+                <h2>Order of Operations (PEMDAS)</h2>
+                    <p>
+                        The order of operations is: parentheses, exponents, multiplication/division, then addition/subtraction.
+                        <br>
+                        Please Excuse My Dear Aunt Sally. She doesn't know how JavaScript works, but now you do!
+                        <br>
+                        <label for="num1"></label>
+                            <input type="number" id="num1" min="0" max="9">
+                        +
+                        <label for="num2"></label>
+                            <input type="number" id="num2" min="0" max="9">
+                        *
+                        <label for="num3"></label>
+                            <input type="number" id="num3" min="0" max="9">
+                        -
+                        <label for="num4"></label>
+                            <input type="number" id="num4" min="0" max="9">
+                        /
+                        <label for="num5"></label>
+                            <input type="number" id="num5" min="0" max="9">
+                        **
+                        <label for="num6"></label>
+                            <input type="number" id="num6" min="0" max="9">
+                        + (
+                        <label for="num7"></label>
+                            <input type="number" id="num7" min="0" max="9">
+                            +
+                        <label for="num8"></label>
+                            <input type="number" id="num8" min="0" max="9">
+                        ) = 
+                        <button id="button5">Calculate!</button>
+                    </p>
+                    <p id="answer5">Answer goes here.</p>
+            </div>
+            <br>
+            <!--6. Guess what number I'm thinking-->
+            <div class="question">
+                <h2>Guess a number between (not including) 1 and 10:</h2>
+                    <label for="numberGuess" id="hide"></label>
+                        <input type="number" id="numberGuess" min="2" max="9">
+                    <br>
+                    <button id="button6">Guess</button>
+                    <p id="answer6">The number I'm thinking of is...</p>
+            </div>
+            <br>
+            <!--7. Animal concatenation-->
+            <div class="question">
+                <h2>Remember the show CatDog? Let's make our own version.</h2>
+                    <label for="animal1">Enter an animal:</label>
+                        <input type="text" id="animal1">
+                    <br>
+                    <label for="animal2">Enter another animal:</label>
+                        <input type="text" id="animal2">
+                    <br>
+                    <button id="button7">conCATenate!</button>
+                    <p id="answer7">Nickelodeon's newest animated series is...</p>
+                    <img id="image" src="catdog.png" alt="CatDog from the Nickelodeon television series">
+            </div>
+
+        </main>
+        <footer>
+            Copyright &copy; 2021 Alexandria Schneider<br>
+            <a href="mailto:aschne26@stumail.jccc.edu">aschne26@stumail.jccc.edu</a>
+        </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
